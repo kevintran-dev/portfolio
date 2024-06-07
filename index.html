@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Kevin
+            <span>Tran</span>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-img">
+            <img src="water.jpg" alt="" width="700px">
+        </div>
+
+        <div class="home-content">
+            <h1><span>Welcome</span></h1>
+
+            <h3 class="text-animation">
+                I'm a <span></span>
+            </h3>
+
+            <p>Thanks for visiting!</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kevinhatran/"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>I'm a Full-Stack Engineer passionate about building software with a user-centric approach. I recently
+                graduated from Springboard's Software Engineering program. Before this transition, I spent 9+ years
+                working in pharmacy as a pharmacy technician.
+
+                While I do love pharmacy, I found that my true passion lies in helping others through software
+                development. Springboard has allowed me to learn full stack development in a hands on manner and build
+                my portfolio filled with experience in React, NodeJS, JavaScript and Python. My attention to detail in
+                the pharmacy has made me a better developer, especially when it comes to debugging and user centric
+                design. I am excited to acquire new skills and hone my current ones - let's connect!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="about-img">
+            <img src="purple.jpg" alt="" width="700px">
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <a class="img-link" href="https://digitcg.onrender.com/">
+                    <div class="image">
+                        <img src="digimon.png">
+                        <div class="projects-info">
+                            <h4>Digimon Deck Builder</h4>
+                            <p>Browse Digimon cards and create decks out of these cards. Frontend created with React.
+                                Backend
+                                created with Express. PostgreSQL used for the database. Key features include creation of
+                                decks,
+                                user authentication. Challenges like protecting sensitive data and and saving deck
+                                information
+                                were tackled. Future plans include card counter. Its development underscored state
+                                management,
+                                and a strong backend/database foundation.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="projects-box">
+                <a class="img-link" href="https://boardgames-catelog.onrender.com/">
+                    <div class="image">
+                        <img src="boardgame.jpg">
+                        <div class="projects-info">
+                            <h4>Personal Board Game Library</h4>
+                            <p>Create a catalog of board games by scanning the barcode of the game. Created with Python
+                                and
+                                Flask. Uses SQLAlchemy to store board game information to the database. Retrieves board
+                                game
+                                names by UPC from GameUPC API, and board game information from BoardGameGeek API.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="9bb9853d-f1e6-4f4c-ad56-582a93ee57ec">
+            <div class="input-box">
+
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+
+            </div>
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
